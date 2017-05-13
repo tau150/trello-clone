@@ -11,16 +11,13 @@ export function agregarTarea (tarea){
   };
 };
 
-export function obtenerDatos () {
+export function obtenerDatos (callback) {
 	console.log('voy a entrar a la funcion');
 	fetch('http://172.50.0.231:8080/lists')
 	.then(function(response) {
-  		return response;
+  		return response.json();
 	})
-	.then(function(response) {
-		console.log(response);
-  		return response;
-	});
+	.then(response => callback(response));
 
 }
 
@@ -34,3 +31,13 @@ export function eliminarTarea (id){
     });
   };
 };
+export function guardarDatos(dato) {
+  console.log(" entra", dato)
+  return dispatch => {
+    dispatch({
+      type:'guardarDatos',
+      data:dato
+
+    })
+  }
+}

@@ -4,7 +4,10 @@ const listadoTareas = (state=[],action)=>{
   switch (action.type) {
     case "agregarTarea":
       return state.concat({tarea:action.tarea,id:setId(state)})
-      break;
+    case 'guardarDatos':
+      	console.log("entra a guardar")
+      	console.log(action.data)
+      	return Object.assign({},action.data);
     default:
       return state
 

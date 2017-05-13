@@ -2,14 +2,17 @@
 import React, { Component } from 'react';
 import ListarListas from './components/ListarListas';
 import { connect } from 'react-redux';
-import { obtenerDatos } from './actions/index';
+import { obtenerDatos, guardarDatos } from './actions/index';
 import './site.css';
 
 
 class App extends Component {
 
   componentDidMount(){
-  	obtenerDatos()
+  	this.props.obtenerDatos((respose) => {
+    	this.props.guardarDatos(respose);
+  	})
+
   }
 
   render() {
@@ -20,4 +23,4 @@ class App extends Component {
   }
 }
 
-export default connect( state => state, {})(App);
+export default connect( state => state, {obtenerDatos, guardarDatos})(App);
