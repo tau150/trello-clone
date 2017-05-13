@@ -5,6 +5,7 @@ export function agregarTarea (tarea){
     dispatch({
       type:"agregarTarea",
       tarea:tarea
+    
 
     });
   };
@@ -22,3 +23,14 @@ export function obtenerDatos () {
 	});
 
 }
+
+export function eliminarTarea (id){
+
+  return dispatch=>{
+    dispatch({
+      type:"eliminarTarea",
+      id:id
+  
+    });
+  };
+};

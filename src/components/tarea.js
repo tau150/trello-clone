@@ -4,15 +4,30 @@ import {connect} from 'react-redux';
 
 const Tarea = (state) =>{
 
+const handleEdit = ()=>{
+
+}
+
+const handleDelete = ()=>{
+	
+}
+
+
 return(
-	<div>
-  	<p>Titulo Lista</p>
-  	<input type="checkbox" id="cbox1" value="first_checkbox" />
-  	<button>editar</button>
-  	<button>cerrar</button>
-	</div>
-
-
+<div className="col-md-12 task">
+            <div className="row">
+              <div className="col-md-1">
+                <input type="checkbox"/>
+              </div>
+              <div className="col-md-9">
+                <p>La tareaasdsadsadsadsa asd sa dsa das das d asd asd asdasdsadsadsadsad asdsadsa</p>
+              </div>
+              <div className="col-md-2">
+								<button>E</button>
+								<button>X</button>
+              </div>
+            </div>
+          </div>
 )
 
 }
