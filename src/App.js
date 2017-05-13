@@ -1,18 +1,14 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import ListarListas from './components/ListarListas';
 import { connect } from 'react-redux';
-import './App.css';
+import './site.css';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to Trello Clone</h2>
-        </div>
-
-      </div>
+      <ListarListas/>
     );
   }
 }

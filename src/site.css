@@ -1,0 +1,25 @@
+.column{
+  background: #E2E4E6;
+    border-radius: 3px;
+        max-height: 100%;
+        border-color: #222222;
+}
+
+.column-title{
+  padding: 8px 10px;
+      min-height: 18px;
+}
+
+.task-row{
+      padding: 10px;
+}
+.task{
+  padding: 8px 10px;
+      min-height: 18px;
+      border-radius: 3px;
+      background-color: #FFFFFF;
+}
+
+.margin-left{
+      margin-left: 10px;
+}
