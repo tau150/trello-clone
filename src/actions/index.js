@@ -10,3 +10,15 @@ export function agregarTarea (tarea){
     });
   };
 };
+
+
+export function eliminarTarea (id){
+
+  return dispatch=>{
+    dispatch({
+      type:"eliminarTarea",
+      id:id
+  
+    });
+  };
+};
