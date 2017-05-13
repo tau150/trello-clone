@@ -7,8 +7,14 @@ import Tarea from './tarea';
 
 const ListaTareas = (state)=>{
 
-  return (
-
+  return(
+    {
+      state.listadoTareas.map((tarea, index)=>{
+        return (
+          <Tarea key={index}/>
+        )
+      })
+    }
   )
 
 }

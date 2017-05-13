@@ -5,6 +5,7 @@ export function agregarTarea (tarea){
     dispatch({
       type:"agregarTarea",
       tarea:tarea
+    
 
     });
   };
