@@ -9,3 +9,16 @@ export function agregarTarea (tarea){
     });
   };
 };
+
+export function obtenerDatos () {
+	console.log('voy a entrar a la funcion');
+	fetch('http://172.50.0.231:8080/lists')
+	.then(function(response) {
+  		return response;
+	})
+	.then(function(response) {
+		console.log(response);
+  		return response;
+	});
+
+}
